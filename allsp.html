@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <header class="sticky-top">
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/logo.png?1709783035248" alt="">
+                <div class="d-flex ">
+                    <div><i class="fa-solid fa-phone fa-lg  "></i>0987654321</div>
+                    &nbsp;
+                    <div><i class="fa-solid fa-paper-plane fa-lg "></i>secondsunday@gmeo.vn</div>
+                    &nbsp;
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Nhập tên sản phẩm"
+                            aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Tìm</button>
+                    </form>
+
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="mt-1 link-dark"><i class="fa-solid fa-cart-shopping fa-xl "></i></a>
+                    </button>
+
+
+                    &ensp;
+                    &ensp;
+                    &ensp;
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <i class="fa-solid fa-user fa-xl"></i>
+                    </button>
+
+
+
+
+                </div>
+            </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping fa-xl "></i>Giỏ
+                        hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Giỏ hàng trống</p>
+                    <p>Tiếp tục mua hàng <a href="allsp.html" class="link-info  text-decoration-none ">tại đây</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Nhớ từ lần đăng nhập tiếp theo</label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-info bg-light " data-bs-dismiss="modal">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+
+        <div class="container">
+            <div class="col-12 ">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+
+
+                        <div class="collapse navbar-collapse col-12" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item col-sm-3">
+                                    <a class="nav-link fs-4  " aria-current="page" href="index.html">Trang chủ</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item col-sm-3">
+                                    <a class="nav-link fs-4 " aria-current="page" href="chinhsach.html">Chính sách</a>
+                                </li>
+                                &nbsp;
+                                <a class="navbar-brand col-sm-4" href="index.html">
+                                    <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/logo.png?1709783035248"
+                                        alt="" width="300px" height="36">
+                                </a>
+                                &ensp;
+                                <li class="nav-item col-sm-3">
+                                    <a class="nav-link fs-4" href="bangsize.html">Bảng size</a>
+                                </li>
+                                &nbsp;
+                                <li class="nav-item col-sm-3">
+                                    <a class="nav-link fs-4" href="hethong.html">Hệ thống cửa hàng</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+                <hr>
+
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid justify-content-center ">
+                    <div class="item">
+                        <a href="allsp.html" class="text-decoration-none link-dark ">
+                            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/icon1h.png?1709783035248"
+                                alt="" width="100px" height="80px">
+                            <p class="">Tất cả sản phẩm</p>
+                        </a>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="item">
+                        <a href="allsp.html" class="text-decoration-none link-dark ">
+                            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/icon2h.png?1709783035248"
+                                alt="" width="100px" height="80px">
+                            <p>Giày</p>
+                        </a>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="item">
+                        <a href="allsp.html" class="text-decoration-none link-dark ">
+                            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/icon3h.png?1709783035248"
+                                alt="" width="100px" height="80px">
+                            <p>Dép</p>
+                        </a>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="item">
+                        <a href="allsp.html" class="text-decoration-none link-dark ">
+                            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/icon4h.png?1709783035248"
+                                alt="" width="100px" height="80px">
+                            <p>Phụ Kiện</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+        </div>
+    </nav>
+
+
+    <!-- Nội dung -->
+    <div class=" bg-light container-fluid ">
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <h1>Tất cả sản phẩm</h1>
+                <div class="d-flex ">
+                    <label for="" class="mt-1 ">Sắp xếp theo   </label>
+                    &ensp;
+                    <select class="form-select " aria-label="Default select example" style="width: 200px;" >
+                        <option selected>Mặc định</option>
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
+                        <option value="3">Giá tăng dần</option>
+                        <option value="4">Giá giảm dần</option>
+                      </select>
+                    
+                </div>
+            </div>
+        </nav>
+    
+    
+    <!-- Sản phẩm -->
+
+<div class="container ">
+    
+<div class="row ">
+<div class="card" style="width: 20rem;" ng-repeat="g in list">
+  <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+  <div class="card-body">
+    <h5 class="card-title">{{g.title}}</h5>
+    <p class="text-decoration-line-through">{{g.oldprice}}</p>
+    <p class="text-danger fs-4  ">{{g.price}}</p>
+    
+  </div>
+
+   
+
+  </div>
+  <div class="card ms-2" style="width: 20rem;" ng-repeat="g in list">
+    <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{g.price}}</p>
+      
+    </div>
+
+
+  </div>
+  <div class="card ms-2" style="width: 20rem;" ng-repeat="g in list">
+    <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{g.price}}</p>
+      
+    </div>
+
+
+  </div>
+  <div class="card ms-2" style="width: 20rem;" ng-repeat="g in list">
+    <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{g.price}}</p>
+      
+    </div>
+
+
+  </div>
+  <div class="card mt-4" style="width: 20rem;" ng-repeat="g in list">
+    <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{g.price}}</p>
+      
+    </div>
+
+
+  </div>
+  <div class="card ms-2 mt-4" style="width: 20rem;" ng-repeat="g in list">
+    <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{g.price}}</p>
+      
+    </div>
+
+
+  </div>
+  <div class="card ms-2 mt-4" style="width: 20rem;" ng-repeat="g in list">
+    <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{g.price}}</p>
+      
+    </div>
+
+
+  </div>
+  <div class="card ms-2 mt-4" style="width: 20rem;" ng-repeat="g in list">
+    <a href="detail.html"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{g.price}}</p>
+      
+    </div>
+
+
+  </div>
+</div>
+<!-- DÉP -->
+<br>
+<div class="row ">
+  <div class="card" style="width: 20rem;" ng-repeat="d in dep">
+    <img src="{{d.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{d.title}}</h5>
+      <p class="text-decoration-line-through">{{d.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{d.price}}</p>
+    </div>
+    </div>
+      <div class="card ms-2" style="width: 20rem;"ng-repeat="d in dep">
+        <img src="{{d.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{d.title}}</h5>
+          <p class="text-decoration-line-through">{{d.oldprice}}</p>
+          <p class="text-danger fs-4  ">{{d.price}}</p>
+          
+        </div>
+  
+         
+  
+        </div>
+        <div class="card ms-2" style="width: 20rem;"ng-repeat="d in dep">
+          <img src="{{d.img}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{d.title}}</h5>
+            <p class="text-decoration-line-through">{{d.oldprice}}</p>
+            <p class="text-danger fs-4  ">{{d.price}}</p>
+            
+          </div>
+    
+           
+    
+          </div>
+          <div class="card ms-2" style="width: 20rem;"ng-repeat="d in dep">
+            <img src="{{d.img}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{d.title}}</h5>
+              <p class="text-decoration-line-through">{{d.oldprice}}</p>
+              <p class="text-danger fs-4  ">{{d.price}}</p>
+              
+            </div>
+      
+             
+      
+            </div>
+      
+    </div>
+    <!-- Phụ kiện -->
+<br>
+<div class="row ">
+  <div class="card" style="width: 20rem;" ng-repeat="pk in phukien">
+    <img src="{{pk.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{pk.title}}</h5>
+      <p class="text-decoration-line-through">{{pk.oldprice}}</p>
+      <p class="text-danger fs-4  ">{{pk.price}}</p>
+    </div>
+    </div>
+
+      <div class="card ms-2" style="width: 20rem;" ng-repeat="pk in phukien">
+        <img src="{{pk.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{pk.title}}</h5>
+          <p class="text-decoration-line-through">{{pk.oldprice}}</p>
+          <p class="text-danger fs-4  ">{{pk.price}}</p>
+        </div>
+        </div>
+        <div class="card ms-2" style="width: 20rem;" ng-repeat="pk in phukien">
+          <img src="{{pk.img}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{pk.title}}</h5>
+            <p class="text-decoration-line-through">{{pk.oldprice}}</p>
+            <p class="text-danger fs-4  ">{{pk.price}}</p>
+          </div>
+          </div>
+          <div class="card ms-2" style="width: 20rem;" ng-repeat="pk in phukien">
+            <img src="{{pk.img}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{pk.title}}</h5>
+              <p class="text-decoration-line-through">{{pk.oldprice}}</p>
+              <p class="text-danger fs-4  ">{{pk.price}}</p>
+            </div>
+            </div>
+      
+    </div>
+    <hr>
+</div>
+</div>
+
+    <div class="danhmuc row">
+
+        <div class="col-md-2 ">
+            <h3>Danh mục</h3>
+            <br>
+            <p>Tất cả sản phẩm</p>
+            <p>Giày</p>
+            <p>Dép</p>
+            <p>Phụ kiện</p>
+        </div>
+        <div class="col-md-2">
+            <h3>Chính sách</h3>
+
+        </div>
+
+        <div class="col-md-3">
+            <h3>LIÊN HỆ</h3>
+            <div><i class="fa-solid fa-phone fa-lg  "></i>0987654321</div>
+            <div><i class="fa-solid fa-paper-plane fa-lg "></i>secondsunday@gmeo.vn</div>
+
+        </div>
+        <div class="col-md-3">
+            <h3>Chính sách</h3>
+            <br>
+            <p>Với thông điệp "Such a simple thing", Second Sunday dành trọn tâm huyết để làm ra các sản phẩm mang
+                màu sắc của riêng mình, màu sắc của sự đơn giản, tinh tế, màu sắc của 1 ngày bình yên. Hãy trải
+                nghiệm, cảm nhận và "enjoy your second sunday" cùng chúng tớ nhé !!! Second Sunday - Such a simple
+                thing</p>
+            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/facebook_1.png?1709783035248" alt="">
+            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/instagram_1.png?1709783035248" alt="">
+            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/tiktok-icon_1.png?1709783035248"
+                alt="">
+            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/youtube_1.png?1709783035248" alt="">
+            <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/zalo-icon_1.png?1709783035248" alt="">
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <footer class="row">
+        <div class="bg-light">
+            <div class="card card-default">
+                <div class="card-heading text-center">
+                    <p>Second Sunday - Giày chất giá mềm .</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script>
+            var app = angular.module("myApp", []);
+            app.controller("myCtrl", function($scope) {
+              $scope.list = [
+                {img:"https://bizweb.dktcdn.net/100/466/874/products/2-1694767487609.jpg?v=1695012310270",
+                title:"Giày Second Sunday Chunky Big Lace SK03",
+                oldprice:"700,000đ",
+                price:"290.000đ"
+                }
+                
+  
+              ]
+              $scope.dep = [
+                {img:"https://bizweb.dktcdn.net/100/466/874/products/4-1694767964067.jpg?v=1695632280310",
+                title:"Dép Second Sunday Essentials 2.0 Slides SL08",
+                oldprice:"350,000đ",
+                price:"180.000đ"
+                }
+              ]
+              $scope.phukien = [
+                {img:"https://bizweb.dktcdn.net/thumb/large/100/466/874/products/vn-11134207-7qukw-lhcw2ubmox823b-1685417509131.jpg?v=1698154550910",
+                title:"Túi Second Sunday Convenient Crossbag SA07/ Đen",
+                oldprice:"350,000đ",
+                price:"180.000đ"
+                }
+              ]
+            });
+            </script>
+</body>
+
+</html>

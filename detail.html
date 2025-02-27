@@ -1,0 +1,60 @@
+    <div class="container bg-light ">
+        <div class="row">
+            <article class="col-md-7">
+                <img src="{{up.img}}" alt="" width="730px" height="730px">
+            </article>
+            <br>
+            <aside class="col-md-5">
+                <div class="ms-2">
+                <h1 class="mt-2  ">{{ up.title }}</h1>
+
+                <div class="d-flex  ">
+                    <i class="fa-solid fa-star fa-lg pt-3" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg pt-3" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg pt-3" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-lg pt-3" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star fa-lg pt-3" style="color: #FFD43B;"></i>
+                    &ensp;
+                    <p class="fs-5">(97 đánh giá)</p>
+                </div>
+                <h3>Mô tả sản phẩm</h3>
+                <p>Với lối thiết kế đặc biệt, đế cao đến 4cm, các gam màu pastel trung tính nhã nhặn sẵn sàng khiến bạn nổi bần bật giữa đám đông. Đó là chúng mình còn chưa kể đến chi tiết Big Lace đặc trưng bổ sung thêm độ chất cho outfit của bạn.
+                </p>
+                   <p>Chất liệu : Microfiber leather và đế cao su cao cấp</p>
+                <div class="d-flex  ">
+                    <p class="fs-1 text-danger ">{{ up.price }} đ</p>
+                    &ensp;
+                    &ensp;
+                    &ensp;
+                    <p class="fs-1 text-decoration-line-through ">{{ up.oldprice }} đ</p>
+                </div>
+                <h4>Size</h4>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-info ">39</button>
+                    &ensp;
+                    <button type="button" class="btn btn-outline-info ">40</button>
+                    &ensp;
+                    <button type="button" class="btn btn-outline-info ">41</button>
+                    &ensp;
+                    <button type="button" class="btn btn-outline-info ">42</button>
+                    &ensp;
+                    <button type="button" class="btn btn-outline-info ">43</button>
+                </div>
+                <br>
+                <div class="d-flex">
+                    <h4>Số lượng:</h4>
+                    <input type="number" name="" id="" class="form-control " style="width: 200px;" placeholder="1" >
+                </div>
+                &ensp;
+                &ensp;
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-info" style="width: 250px; height:50px" ng-click="mySP()">THÊM VÀO GIỎ</button>
+                    
+                    &ensp;
+                    &ensp;
+                    <button type="button" class="btn btn-info" style="width: 250px; height:50px">MUA NGAY</button>
+                </div>
+            </div>
+            </aside>
+        </div>
+    </div>

@@ -1,0 +1,67 @@
+header{
+    background-color: rgb(182, 182, 182);
+    height: 50px;
+    display: block;
+}
+
+header nav div img{
+    width: 200px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+header nav .d-flex{
+    margin-right: 50px;
+}
+header nav .d-flex div{
+    margin-top: 8px;
+}
+.vl {
+    border-left: 1px solid gray;
+    height: 100px;
+  }
+  .item{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+  }
+  .danhmuc{
+    height: 350px;
+    background-color: white;
+  }
+  .danhmuc div{
+    margin-top: 20px;
+    margin-left: 30px
+  }
+fieldset{
+  width: 700px;
+
+  text-align: center;
+}
+.hr-lines{
+  position: relative;
+}
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 1200px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.hr-liness{
+  position: relative;
+}
+.hr-liness:after{
+  content:" ";
+  height: 2px;
+  width: 1100px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+

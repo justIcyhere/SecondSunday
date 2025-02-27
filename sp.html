@@ -1,0 +1,47 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/slider_1.jpg?1709783035248" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/slider_2.jpg?1709783035248" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://bizweb.dktcdn.net/100/466/874/themes/921146/assets/slider_3.jpg?1709783035248" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+&ensp;
+    <div class=" container   container-fluid    justify-content-center   " style="width: 730px;">
+        <fieldset>
+            <legend class="fs-1 ">Such a simple thing</legend>
+            <ul class="list-unstyled">
+                <li class="fs-6 ">Với thông điệp "Such a simple thing", Second Sunday dành trọn tâm huyết để làm ra các sản phẩm mang màu sắc của riêng mình, màu sắc của sự đơn giản, tinh tế, màu sắc của 1 ngày bình yên. Hãy trải nghiệm, cảm nhận và "enjoy your second sunday" cùng chúng tớ nhé !!!
+
+                </li>
+                    <hr class="fw-bolder ">
+            </ul>
+        </fieldset>
+
+        
+    </div>
+
+
+<div class="card ms-2 mt-2 " style="width: 20rem;" ng-repeat="g in sp" >
+    <a href="#!/detail/{{g.id}}"><img src="{{g.img}}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">{{g.title}}</h5>
+      <p class="text-decoration-line-through">{{g.oldprice}} đ</p>
+      <p class="text-danger fs-4  ">{{g.price}} đ</p>
+    </div>
+    </div>
+

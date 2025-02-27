@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thêm sản phẩm</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Additional CSS styles can be added here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Thêm sản phẩm</h2>
+    <form>
+      <div class="form-group">
+        <label for="productImage">Ảnh sản phẩm</label>
+        <input type="text" ng-model="img" class="form-control-file" id="productImage">
+      </div>
+      <div class="form-group">
+        <label for="productName">Tên sản phẩm</label>
+        <input type="text" ng-model="title" class="form-control" id="productName">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="oldPrice">Giá cũ</label>
+          <input type="number" ng-model="oldprice" class="form-control" id="oldPrice">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="newPrice">Giá mới</label>
+          <input type="number"ng-model="price" class="form-control" id="newPrice">
+        </div>
+      </div>
+      <button type="submit" ng-click = "addSP()" class="btn btn-primary">Thêm sản phẩm</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS (optional if you need JS functionality) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
